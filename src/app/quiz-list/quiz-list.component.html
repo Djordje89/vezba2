@@ -1,0 +1,2 @@
+<app-quiz-item-form (quizItemCreated)="addQuizItem($event)"></app-quiz-item-form>
+<app-quiz-item *ngFor="let q of quizItems" [quizItemData]="q"></app-quiz-item>

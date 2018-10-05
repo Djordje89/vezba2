@@ -1,0 +1,19 @@
+<!-- <h1>{{quizItemData.question}}</h1>
+<h2 [hidden] = "quizItemData.hideAnswer">{{quizItemData.answer}}</h2>  -->
+ 
+
+   <mat-card>
+  <mat-card-header>
+  <mat-card-title><h1>{{ quizItemData.question}}</h1></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+  <p [hidden] = "quizItemData.hideAnswer">{{ quizItemData.answer }}</p>
+  </mat-card-content>
+  <button mat-raised-button color="primary" (click)="quizItemData.hideAnswer=!quizItemData.hideAnswer">Prikazi</button>
+  </mat-card>
+  <br>
+  <!-- <button mat-raised-button color="primary" (click)="quizItemData.hideAnswer = !quizItemData.hideAnswer">Prikaži</button>  -->
+
+  
+
+ 
